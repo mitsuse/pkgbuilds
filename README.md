@@ -1,3 +1,3 @@
 # pkgbuilds
 
-Package descriton files for [Arch Linux](https://www.archlinux.org/).
+Package description files for [Arch Linux](https://www.archlinux.org/).
