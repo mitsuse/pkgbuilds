@@ -67,7 +67,7 @@ build() {
     --enable-cscope \
     --disable-netbeans \
     --enable-perlinterp \
-    --disable-pythoninterp \
+    --enable-pythoninterp \
     --disable-python3interp \
     --disable-rubyinterp \
     --disable-luainterp
@@ -89,7 +89,7 @@ build() {
     --enable-cscope \
     --disable-netbeans \
     --enable-perlinterp \
-    --disable-pythoninterp \
+    --enable-pythoninterp \
     --disable-python3interp \
     --disable-rubyinterp \
     --enable-luainterp \
@@ -108,7 +108,7 @@ check() {
 
 package_vim() {
   pkgdesc='Vi Improved, a highly configurable, improved version of the vi text editor (with a minimal set of dependencies)'
-  depends=("vim-runtime=${pkgver}-${pkgrel}" 'gpm' 'acl' 'luajit')
+  depends=("vim-runtime=${pkgver}-${pkgrel}" 'gpm' 'acl' 'luajit' 'python2')
   conflicts=('vim-minimal' 'vim-python3' 'gvim' 'gvim-python3')
 
   cd "${srcdir}"/vim-build
@@ -135,7 +135,7 @@ package_vim() {
 
 package_vim-runtime() {
   pkgdesc='Runtime for vim and gvim'
-  depends=('perl' 'gawk')
+  depends=('perl' 'gawk' 'python2')
   backup=('etc/vimrc')
 
   cd "${srcdir}"/vim-runtime-build
