@@ -22,7 +22,7 @@ source_x86_64=(
 sha1sums_x86_64=('019235c6fa80aab37c8accfb869773bc23309da2')
 
 package() {
-    cd "$srcdir/$pkgname-$pkgver/"
+    cd "$srcdir"
     install -d "${pkgdir}/usr/bin/"
     install -m 755 bullet "${pkgdir}/usr/bin"
 }
