@@ -19,7 +19,7 @@ sha1sums_i686=('b6341c556168803a8a7f17714e057d18e718cbc0')
 source_x86_64=(
     https://github.com/mitsuse/${pkgname}/releases/download/v${pkgver}/linux_amd64.zip
 )
-sha1sums_x86_64('019235c6fa80aab37c8accfb869773bc23309da2')
+sha1sums_x86_64=('019235c6fa80aab37c8accfb869773bc23309da2')
 
 build() { 
 }
