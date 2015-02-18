@@ -1,6 +1,6 @@
 # Author: Tomoya kose (mitsuse) <tomoya@mitsuse.jp>
 
-pkgname=bullet
+pkgname=bullet-cmd
 pkgver=0.1.0
 pkgrel=1
 pkgdesc="A command-line tool to send a message to devices via Pushbullet."
@@ -12,12 +12,12 @@ optdepends=()
 backup=()
 
 source_i686=(
-    https://github.com/mitsuse/${pkgname}/releases/download/v${pkgver}/linux_386.zip
+    https://github.com/mitsuse/bullet/releases/download/v${pkgver}/linux_386.zip
 )
 sha1sums_i686=('3b98fe5e35bbe63ed2a69d4ea5b760651bc58535')
 
 source_x86_64=(
-    https://github.com/mitsuse/${pkgname}/releases/download/v${pkgver}/linux_amd64.zip
+    https://github.com/mitsuse/bullet/releases/download/v${pkgver}/linux_amd64.zip
 )
 sha1sums_x86_64=('d7049c449a449b823cbee2e4b122670bc0ee50bb')
 
